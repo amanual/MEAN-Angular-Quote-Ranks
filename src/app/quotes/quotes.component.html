@@ -1,0 +1,8 @@
+<div *ngFor = "let q of quotes">
+  <p>{{q.quote}}</p>
+  <p>- {{q.author}}</p>
+  <p>{{ q.rating }}</p>
+  <button (click) = "q.rating = q.rating + 1">Vote up</button> &nbsp; <button (click) = "q.rating = q.rating - 1">Vote down</button>
+  <button (click) = "clearQ()">Delete</button>
+  {{q | json}}
+</div>
