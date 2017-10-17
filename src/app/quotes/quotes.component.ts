@@ -10,8 +10,8 @@ export class QuotesComponent implements OnInit {
   constructor() { }  
   ngOnInit() {    
   }
-  clearQ(){    
-    this.quotes = [];   
+  clearQ(index){    
+    this.quotes.splice(index, 1);   
   }
 
 }
